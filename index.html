@@ -6,14 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Touch Typing</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="navbar"><span id="logo">Typing Practice</span></div>
     <div class="timer" id="timer">0</div>
     <div class="container">
+      <div class="stats">
+        <span class="speedSpan"
+          ><i class="fa fa-clock-o"></i> speed :
+          <span id="speedValue">0</span>wpm</span
+        >
+        <span class="accuracySpan"
+          ><i class="fa fa-bar-chart"></i> accuracy :
+          <span id="accuracyValue">0</span>%</span
+        >
+        <button id="nextBtn" onclick="renderNewQuote()">Next Quote</button>
+      </div>
       <div class="quote-display" id="quoteDisplay">quote</div>
       <textarea class="quote-input" id="quoteInput" autofocus>quote</textarea>
-      <p id="result"></p>
+      <!-- <p id="result"></p> -->
     </div>
   </body>
 </html>
